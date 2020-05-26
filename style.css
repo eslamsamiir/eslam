@@ -37,7 +37,7 @@ input[type=submit] {
 .first{
   box-sizing: border-box;
   margin-left: -200px;
-  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .second{
   border-top-left-radius: 160px;
@@ -49,6 +49,12 @@ input[type=submit] {
   color: white;
   font-size: 6em;
   margin: -10px auto;
+}
+.first img{
+  /*border: 1px solid #ddd;
+  border-radius: 4px;*/
+  padding: 5px;
+  width: 60px;
 }
 .inner p{
   color: white;
