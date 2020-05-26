@@ -4,7 +4,7 @@ body{
 }
 .outer{
   box-sizing: border-box;
-  padding: 0px 0px 0px 200px;
+  padding: 10px 0px 0px 200px;
   background: radial-gradient(circle, grey 0%, black 100%);
   width: 80%;
   height: auto;
@@ -71,4 +71,13 @@ a:link, a:visited{
 }
 a:hover{
   text-decoration: none;
+}
+h1{
+  writing-mode: vertical-rl;
+  color: #4CAF50;
+  font-size: 6em;
+}
+.text{
+  height: 0px;
+  margin-left: -260px;
 }
