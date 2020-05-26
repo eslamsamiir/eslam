@@ -15,6 +15,8 @@ aside{
   background: linear-gradient(0deg, grey 0%, black 100%);
   color: white;
   padding-left: 3%;
+  border-bottom: 5px solid #4CAF50;
+  border-right: 5px solid #4CAF50;
 }
 input[type=text]{
   width: 80%;
@@ -40,7 +42,11 @@ input[type=submit] {
   padding-bottom: 120px;
 }
 .second{
+  border-top: 5px solid #4CAF50;
+  border-bottom: 5px solid #4CAF50;
+  border-left: 5px solid #4CAF50;
   border-top-left-radius: 160px;
+  border-bottom-left-radius: 160px;
   background: linear-gradient(0deg, grey 0%, black 100%);
   padding: 60px;
 }
