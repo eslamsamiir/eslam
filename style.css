@@ -15,6 +15,7 @@ aside{
   background: linear-gradient(0deg, grey 0%, black 100%);
   color: white;
   padding-left: 3%;
+  padding-top: 40px;
   border-bottom: 5px solid #4CAF50;
   border-right: 5px solid #4CAF50;
 }
@@ -39,7 +40,7 @@ input[type=submit] {
 .first{
   box-sizing: border-box;
   margin-left: -200px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 .second{
   border-top: 5px solid #4CAF50;
@@ -50,21 +51,16 @@ input[type=submit] {
   background: linear-gradient(0deg, grey 0%, black 100%);
   padding: 60px;
 }
-.first p{
-  font-family: 'Bad Script', cursive;
-  color: white;
-  font-size: 6em;
-  margin: -10px auto;
-}
-.first img{
-  /*border: 1px solid #ddd;
-  border-radius: 4px;*/
-  padding: 5px;
-  width: 60px;
-}
-.inner p{
+.inner p:nth-child(odd){
   color: white;
   font-family: 'PT Sans', sans-serif;
+}
+.inner p:nth-child(even){
+  color: #4CAF50;
+  font-family: 'PT Sans', sans-serif;
+}
+.inner p::selection{
+  color: black;
 }
 ul{
   line-height: 30px;
@@ -79,11 +75,36 @@ a:hover{
   text-decoration: none;
 }
 h1{
-  writing-mode: vertical-rl;
+  /*color: rgba(0,0,0,0.5);
+  line-height: 30px;
+  text-shadow: 0 0 3px #4CAF50, 0 0 5px #4CAF50;*/
   color: #4CAF50;
   font-size: 6em;
 }
-.text{
-  height: 0px;
-  margin-left: -260px;
+div.nav{
+  margin-left: -200px;
+  margin-top: -25px;
 }
+ul.nav{
+    display: flex;
+    line-height: 40px;
+}
+ul.nav a:link{
+    text-decoration: none;
+}
+ul.nav li{
+  background: linear-gradient(0deg, grey 0%, black 100%);
+  margin: 0px 10px;
+  width:25%;
+  text-align: center;
+  color: white;
+  border: 3px solid #4CAF50;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/*In normal writing mode we have:*/
+/*margin-top, margin-bottom, margin-right and margin-left*/
+/*In order for them to be related to the direction of text and not the physical screen, we should substitute those with:*/
+/*margin-block-start, margin-block-end, margin-inline-start, margin-inline-end*/
+/*And the same works for paddings and borders.*/
